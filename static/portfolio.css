@@ -389,6 +389,47 @@ h1 span {
     color: var(--header-color)
 }
 
+@media (max-width: 1250px) {
+    body {
+        display: block;
+    }
+
+    .tabs {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border: none;
+        box-shadow: none;
+        flex-direction: column-reverse;
+        animation: slide-in-top 0.5s both;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+    .tab-content {
+        margin: 50px 30px
+    }
+
+    .tab-item,
+    .card {
+        margin: 10px 0;
+    }
+
+    .arrow-div {
+        display: block;
+    }
+
+    .tb-certifications h1 {
+        font-size: 37px;
+    }
+
+    .link-icon {
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 600px) {
 
     body {
@@ -425,52 +466,6 @@ h1 span {
     .timestamp {
         display: block;
         height: auto;
-    }
-
-    .tb-certifications h1 {
-        font-size: 37px;
-    }
-
-    .link-icon {
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 1250px) {
-    body {
-        display: block;
-    }
-
-    .tabs {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        border: none;
-        box-shadow: none;
-        flex-direction: column-reverse;
-        animation: slide-in-top 0.5s both;
-    }
-
-    .avatar {
-        display: none;
-    }
-
-    .tab-content {
-        margin: 50px 30px
-    }
-
-    .tab-item,
-    .card {
-        margin: 10px 0;
-    }
-
-    .arrow-div {
-        display: block;
-    }
-
-    .timestamp {
-        display: flex;
-        /* height: auto; */
     }
 
     .tb-certifications h1 {
