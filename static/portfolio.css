@@ -1,0 +1,483 @@
+:root {
+    --background-color: #fff;
+    --header-color: #1EE3CF;
+    --text-color: #757575;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    background-color: var(--background-color);
+    color: #212121;
+}
+
+.arrow-div {
+    width: 30px;
+    height: 30px;
+    /* background-color: #000; */
+    margin: 20px auto;
+    display: none;
+}
+
+/* arrow */
+/*------ Settings ------*/
+.container-arrow {
+    --color: #a5a5b0;
+    --size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+}
+
+.container-arrow .chevron-down {
+    position: absolute;
+    animation: keyframes-return .5s;
+}
+
+/* ------ On check event ------ */
+.container-arrow input:checked~.chevron-down {
+    animation: keyframes-rotate .5s;
+    transform: rotate(180deg);
+}
+
+/* ------ Hide the default checkbox ------ */
+.container-arrow input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-rotate {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes keyframes-return {
+    0% {
+        transform: rotate(-180deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*  */
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 30%;
+}
+
+/* card icon */
+.card {
+    display: flex;
+    margin-bottom: 10%;
+    gap: 10px;
+}
+
+/* for all social containers*/
+.socialContainer {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    color: #fff;
+}
+
+.container:hover {
+    background-color: var(--header-color);
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 20px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ẩn thanh scroll */
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+/*  */
+
+.tabs {
+    width: 15%;
+    height: 100vh;
+    border-right: solid black 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: none; */
+
+}
+
+.tab-content {
+    margin: 50px 35px 20px 250px;
+    font-size: 23px;
+}
+
+.tab-item {
+    min-width: 80px;
+    padding: 5px 20px 5px 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.tab-item:hover {
+    opacity: 1;
+    background-color: rgba(30, 227, 207, 0.1);
+    border-color: rgba(30, 227, 207, 0.2);
+}
+
+.tab-item.active {
+    opacity: 1;
+}
+
+.tabs .line {
+    position: absolute;
+    left: 0px;
+    /*offsetLeft*/
+    top: 50%;
+    /*offsetTop + offsetheight - border*/
+    width: 0px;
+    /* client width*/
+    height: 6px;
+    border-radius: 15px;
+    background-color: var(--header-color);
+    transition: all 0.2s ease;
+}
+
+.tab-content {
+    display: block;
+}
+
+.tab-pane {
+    color: #333;
+    display: none;
+}
+
+.tab-pane h1 {
+    margin-bottom: 30px;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.timestamp {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+ul {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+/* button show certification*/
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: var(--header-color);
+    color: ghostwhite;
+}
+
+button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+button:hover span {
+    color: #333;
+}
+
+button::before,
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+/* Certifications tab */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes img-slide-in-top {
+    0% {
+        transform: translateY(-15%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.img-show {
+    animation: img-slide-in-top 0.9s both;
+}
+
+.degree-img {
+    display: none;
+}
+
+.degree-img-visible {
+    display: block;
+}
+
+.degree-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/**/
+
+.link-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.link-icon i {
+    font-size: 200%;
+    color: #333;
+}
+
+.link-icon i:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-earth-americas {
+    margin-left: 20px;
+}
+
+/* phông chữ và màu */
+
+.tab-pane p {
+    text-align: justify;
+}
+
+ul,
+p {
+    color: var(--text-color);
+}
+
+.experiences h3 {
+    margin-bottom: 30px;
+}
+
+.skills p {
+    font-weight: 550;
+}
+
+h1 span {
+    color: var(--header-color)
+}
+
+.time {
+    color: var(--header-color)
+}
+
+@media (max-width: 600px) {
+
+    body {
+        display: block;
+    }
+
+    .tabs {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border: none;
+        box-shadow: none;
+        flex-direction: column-reverse;
+        animation: slide-in-top 0.5s both;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+    .tab-content {
+        margin: 50px 30px
+    }
+
+    .tab-item,
+    .card {
+        margin: 10px 0;
+    }
+
+    .arrow-div {
+        display: block;
+    }
+
+    .timestamp {
+        display: block;
+        height: auto;
+    }
+
+    .tb-certifications h1 {
+        font-size: 37px;
+    }
+
+    .link-icon {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1250px) {
+    body {
+        display: block;
+    }
+
+    .tabs {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border: none;
+        box-shadow: none;
+        flex-direction: column-reverse;
+        animation: slide-in-top 0.5s both;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+    .tab-content {
+        margin: 50px 30px
+    }
+
+    .tab-item,
+    .card {
+        margin: 10px 0;
+    }
+
+    .arrow-div {
+        display: block;
+    }
+
+    .timestamp {
+        display: flex;
+        /* height: auto; */
+    }
+
+    .tb-certifications h1 {
+        font-size: 37px;
+    }
+
+    .link-icon {
+        margin-bottom: 20px;
+    }
+}
