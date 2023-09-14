@@ -1,7 +1,63 @@
 :root {
     --background-color: #fff;
-    --header-color: #1EE3CF;
-    --text-color: #757575;
+    --decord-color: #1EE3CF;
+    --text-color: #333;
+    --heading-color: #212121;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #212121;
+        --decord-color: #1EE3CF;
+        --text-color: #ffffffa6;
+        --heading-color: #fff;
+    }
+
+    .tabs {
+        color: #fff;
+    }
+
+    .socialContainer {
+        background-color: #fff !important;
+    }
+
+    .container:hover {
+        background-color: var(--decord-color) !important;
+    }
+
+    .socialSvg path {
+        fill: rgb(0, 0, 0) !important;
+    }
+
+    button {
+        color: black !important;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .tabs {
+        color: var(--heading-color);
+    }
+
+    .socialContainer {
+        background-color: var(--heading-color);
+    }
+
+    /* .container:hover {
+        background-color: var(--decord-color) !important;
+    } */
+
+    /* .socialSvg path {
+        fill: rgb(0, 0, 0) !important;
+    } */
+
+    button {
+        color: var(--background-color) !important;
+    }
+
+    button::before {
+        background: var(--heading-color) !important;
+    }
 }
 
 * {
@@ -18,7 +74,7 @@ body {
     font-family: "Poppins", sans-serif;
     display: flex;
     background-color: var(--background-color);
-    color: #212121;
+    color: var(--text-color);
 }
 
 .arrow-div {
@@ -118,7 +174,7 @@ body {
 }
 
 .container:hover {
-    background-color: var(--header-color);
+    background-color: var(--decord-color);
     transition-duration: .3s;
 }
 
@@ -208,7 +264,7 @@ body::-webkit-scrollbar {
     /* client width*/
     height: 6px;
     border-radius: 15px;
-    background-color: var(--header-color);
+    background-color: var(--decord-color);
     transition: all 0.2s ease;
 }
 
@@ -217,7 +273,7 @@ body::-webkit-scrollbar {
 }
 
 .tab-pane {
-    color: #333;
+    color: var(--heading-color);
     display: none;
 }
 
@@ -262,7 +318,7 @@ button {
     font-size: 17px;
     border-radius: 500px;
     overflow: hidden;
-    background: var(--header-color);
+    background: var(--decord-color);
     color: ghostwhite;
 }
 
@@ -273,7 +329,7 @@ button span {
 }
 
 button:hover span {
-    color: #333;
+    color: var(--heading-color);
 }
 
 button::before,
@@ -288,7 +344,7 @@ button::after {
 
 button::before {
     content: "";
-    background: #000;
+    background: #fff;
     width: 120%;
     left: -10%;
     transform: skew(30deg);
@@ -345,7 +401,7 @@ img {
 
 .link-icon i {
     font-size: 200%;
-    color: #333;
+    color: var(--heading-color);
 }
 
 .link-icon i:active {
@@ -370,7 +426,7 @@ a {
 
 ul,
 p {
-    color: var(--text-color);
+    color: #757575;
 }
 
 .experiences h3 {
@@ -382,11 +438,11 @@ p {
 }
 
 h1 span {
-    color: var(--header-color)
+    color: var(--decord-color)
 }
 
 .time {
-    color: var(--header-color)
+    color: var(--decord-color)
 }
 
 @media (max-width: 1250px) {
