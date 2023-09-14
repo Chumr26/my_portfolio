@@ -6,7 +6,7 @@ const narBar = $(".tabs");
 const tabs = $$(".tab-item");
 const panes = $$(".tab-pane");
 const itemActive = $('.tab-item.active');
-const degreeBtns = $$(".degree-btn");
+const degreeBtns = $$(".degree-btn button");
 
 const tabLine = $('.tabs .line');
 tabLine.style.left = itemActive.offsetLeft + 'px';
@@ -38,9 +38,9 @@ degreeBtns.forEach((button) => {
     button.onclick = toggleImg;
 })
 function toggleImg() {
-    this.previousElementSibling.classList.toggle('degree-img-visible');
-    this.previousElementSibling.classList.add('img-show');
+    this.parentElement.previousElementSibling.classList.toggle('degree-img-visible');
+    this.parentElement.previousElementSibling.classList.add('img-show');
     //thay đổi text của button
-    let content = this.childNodes[1].children[0].innerHTML;
-    this.childNodes[1].children[0].innerHTML = content == 'View' ? 'Hide' : 'View';
+    let content = this.children[0].innerHTML;
+    this.children[0].innerHTML = content == 'View' ? 'Hide' : 'View';
 }

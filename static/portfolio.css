@@ -32,6 +32,11 @@
     button {
         color: black !important;
     }
+
+    ul,
+    p {
+        color: #dfdfdfcf !important;
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -43,13 +48,10 @@
         background-color: var(--heading-color);
     }
 
-    /* .container:hover {
-        background-color: var(--decord-color) !important;
-    } */
-
-    /* .socialSvg path {
-        fill: rgb(0, 0, 0) !important;
-    } */
+    ul,
+    p {
+        color: #757575 !important;
+    }
 
     button {
         color: var(--background-color) !important;
