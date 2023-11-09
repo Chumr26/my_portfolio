@@ -1,6 +1,6 @@
 :root {
     --background-color: #fff;
-    --decord-color: #1EE3CF;
+    --decord-color: #0072f5;
     --text-color: #333;
     --heading-color: #212121;
 }
@@ -8,7 +8,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #212121;
-        --decord-color: #1EE3CF;
+        --decord-color: #0072f5;
         --text-color: #ffffffa6;
         --heading-color: #fff;
     }
@@ -32,11 +32,6 @@
     button {
         color: black !important;
     }
-
-    ul,
-    p {
-        color: #dfdfdfcf !important;
-    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -46,11 +41,6 @@
 
     .socialContainer {
         background-color: var(--heading-color);
-    }
-
-    ul,
-    p {
-        color: #757575 !important;
     }
 
     button {
@@ -85,6 +75,12 @@ body {
     /* background-color: #000; */
     margin: 20px auto;
     display: none;
+}
+
+/* Projects tab */
+.description {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* arrow */
@@ -250,8 +246,8 @@ body::-webkit-scrollbar {
 
 .tab-item:hover {
     opacity: 1;
-    background-color: rgba(30, 227, 207, 0.1);
-    border-color: rgba(30, 227, 207, 0.2);
+    background-color: rgba(0, 114, 245, 0.1);
+    border-color: rgba(0, 114, 245, 0.2);
 }
 
 .tab-item.active {
@@ -404,14 +400,45 @@ img {
 }
 
 .link-icon i {
+    margin-bottom: 20px;
     font-size: 200%;
     color: var(--heading-color);
+    transition-duration: .3s;
+}
+
+.link-icon i:hover {
+    color: var(--decord-color);
 }
 
 .link-icon i:active {
     transform: scale(0.9);
     transition-duration: .3s;
     opacity: 0.5;
+}
+
+.project-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.project-images img {
+    border-radius: 20px;
+    width: 49%;
+}
+
+#music-player {
+    margin: 0 auto;
+    width: 30%;
+}
+
+#y2m {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#todos {
+    margin: 0 auto;
 }
 
 a {
@@ -428,17 +455,8 @@ a {
     text-align: justify;
 }
 
-ul,
-p {
-    color: #757575;
-}
-
 .experiences h3 {
     margin-bottom: 30px;
-}
-
-.skills p {
-    font-weight: 550;
 }
 
 h1 span {
