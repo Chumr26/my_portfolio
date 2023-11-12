@@ -1,333 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nguyễn Anh Khoa</title>
+        <link
+            rel="icon"
+            href="./static/img/blacksheep-rm.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
+        />
+        <link href="./static/portfolio.css" rel="stylesheet" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nguyễn Anh Khoa</title>
-    <link rel="icon" href="./static/img/blacksheep-rm.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" />
-    <link href="./static/portfolio.css" rel="stylesheet" />
-</head>
-
-<body>
-    <div class="tabs">
-        <!-- avatar -->
-        <!-- <img class="avatar" src="./static/img/avatar.png"> -->
-        <!-- card icons -->
-        <div class="card">
-            <a target="_blank" class="socialContainer container" href="https://github.com/Chumr26">
-                <svg class="socialSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+    <body>
+        <div class="tabs">
+            <!-- avatar -->
+            <!-- <img class="avatar" src="./static/img/avatar.png"> -->
+            <!-- card icons -->
+            <div class="card">
+                <a
+                    target="_blank"
+                    class="socialContainer container"
+                    href="https://github.com/Chumr26"
+                >
+                    <svg
+                        class="socialSvg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512"
+                    >
+                        <path
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                        />
+                    </svg>
+                </a>
+                <a
+                    target="_blank"
+                    class="socialContainer container"
+                    href="mailto:nguyenanhkhoa26092002@gmail.com"
+                >
+                    <svg
+                        class="socialSvg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                    >
+                        <path
+                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                        />
+                    </svg>
+                </a>
+                <a
+                    target="_blank"
+                    class="socialContainer container"
+                    href="tel:0359090159"
+                >
+                    <svg
+                        class="socialSvg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                    >
+                        <path
+                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                        />
+                    </svg>
+                </a>
+            </div>
+            <!--  -->
+            <div class="line"></div>
+            <div class="tab-item active">Profile</div>
+            <div class="tab-item">Certifications</div>
+            <div class="tab-item">Projects</div>
+        </div>
+        <!-- arrow -->
+        <div class="arrow-div">
+            <label class="container-arrow">
+                <input checked="checked" type="checkbox" />
+                <svg
+                    viewBox="0 0 512 512"
+                    height="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chevron-down"
+                >
                     <path
-                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                    ></path>
                 </svg>
-            </a>
-            <a target="_blank" class="socialContainer container" href="mailto:nguyenanhkhoa26092002@gmail.com">
-                <svg class="socialSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
-                </svg>
-            </a>
-            <a target="_blank" class="socialContainer container" href="tel:0359090159">
-                <svg class="socialSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                </svg>
-            </a>
+            </label>
         </div>
         <!--  -->
-        <div class="line"></div>
-        <div class="tab-item active">Profile</div>
-        <div class="tab-item">Certifications</div>
-        <div class="tab-item">Projects</div>
-    </div>
-    <!-- arrow -->
-    <div class="arrow-div">
-        <label class="container-arrow">
-            <input checked="checked" type="checkbox" />
-            <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="chevron-down">
-                <path
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
-                </path>
-            </svg>
-        </label>
-    </div>
-    <!--  -->
-    <div class="tab-content">
-        <div class="tab-pane active">
-            <h1>Nguyen Anh <span>Khoa</span></h1>
-            <p class="intro">
-                Hello! I am considered myself as an intermediate fullstack developer. 
-                I have always been fascinated by the world of programming, 
-                and I feel lucky to have found a career that aligns with my passions. 
-                While I have gained a considerable amount of knowledge and experience, 
-                I am always eager to continue learning and improving.
-            </p>
-            <div class="experiences">
-                <h3>Experiences</h3>
-                <div class="timestamp">
-                    <div>T4 TEK COMPANY LIMITED</div>
-                    <div class="time">4/2023 - Present</div>
-                </div>
-                <p>Au Duong Lan Ward 2 District 8 HCM Viet Nam</p>
-                <ul>
-                    <li>
-                        Participate in developing enterprise management
-                        software products (ERP)
-                    </li>
-                    <li>System config and deployment</li>
-                    <li>Research and writing document</li>
-                </ul>
-            </div>
-            <div class="skills">
-                <h3>Skills</h3>
-                <p>PROGRAMMING LANGUAGES</p>
-                <ul>
-                    <li>Experienced with: C, C++</li>
-                    <li>Familiar with: Javascript, Python</li>
-                </ul>
-                <p>WEB FRAMEWORKS</p>
-                <ul>
-                    <li>Python: Flask</li>
-                    <li>Node.js: Express, Next, React</li>
-                </ul>
-                <p>STYLING LIBRARY</p>
-                <ul>
-                    <li>Tailwind</li>
-                    <li>Bootstrap</li>
-                </ul>
-                <p>TOOLKITS</p>
-                <ul>
-                    <li>Container: Docker</li>
-                    <li>Database: SQLite, PostgreSQL, Mongodb</li>
-                    <li>Operating system: Linux (Ubuntu distro)</li>
-                </ul>
-                <p>SOFT SKILLS</p>
-                <ul>
-                    <li>Team work</li>
-                    <li>
-                        English: Proficient in reading and comprehending
-                        English documents
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="tab-pane tb-certifications">
-            <div>
-                <h1>CERTIFICATIONS</h1>
-                <div class="timestamp">
-                    <h3>CS50: Introduction to Computer Science</h3>
-                    <div class="time">12/2022 - 4/2023</div>
-                </div>
-                <p>
-                    This is CS50x , Harvard University's online course
-                    introduction to the intellectual enterprises of computer
-                    science and the art of programming for majors and
-                    non-majors alike, with or without prior programming
-                    experience. An entry-level course taught by David J.
-                    Malan, CS50x teaches students how to think
-                    algorithmically and solve problems efficiently. Topics
-                    include abstraction, algorithms, data structures,
-                    encapsulation, resource management, security, software
-                    engineering, and web development. Languages include C,
-                    Python, SQL, and JavaScript plus CSS and HTML. Problem
-                    sets inspired by real-world domains of biology,
-                    cryptography, finance, forensics, and gaming. The
-                    on-campus version of CS50x , CS50, is Harvard's largest
-                    course.
+        <div class="tab-content">
+            <div class="tab-pane active">
+                <h1>Nguyen Anh <span>Khoa</span></h1>
+                <p class="intro">
+                    Hello! I am considered myself as an intermediate fullstack
+                    developer. I have always been fascinated by the world of
+                    programming, and I feel lucky to have found a career that
+                    aligns with my passions. While I have gained a considerable
+                    amount of knowledge and experience, I am always eager to
+                    continue learning and improving.
                 </p>
-                <div class="degree-img">
-                    <img alt="CS50X Certificate" src="./static/img/CS50x.png" />
-                </div>
-                <div class="degree-btn">
-                    <button type="button"><span>View</span></button>
-                </div>
-            </div>
-            <div>
-                <div class="timestamp">
-                    <h3>CS50's Introduction to Programming with Python</h3>
-                    <div class="time">3/2023 - 4/2023</div>
-                </div>
-                <p>
-                    An introduction to programming language Python. Learn
-                    how to handle exceptions, find and fix bugs, and write
-                    unit tests; use third-party libraries; validate and
-                    extract data with regular expressions; model real-world
-                    entities with classes, objects, methods, and properties;
-                    and read and write files. Hands-on opportunities for
-                    lots of practice. Exercises inspired by real-world
-                    programming problems.
-                </p>
-                <div class="degree-img">
-                    <img alt="CS50P Certificate" src="./static/img/CS50P.png" />
-                </div>
-                <div class="degree-btn">
-                    <button type="button"><span>View</span></button>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane">
-            <h1>PROJECTS</h1>
-            <div>
-                <div class="timestamp">
-                    <h3>SPOTIFY CLONE</h3>
-                    <div class="time">10/2023 - 11/2023</div>
-                </div>
-                <p>A Full Stack Spotify Clone</p>
-                <div class="description">
-                    <div>
-                        <p>Key Features:</p>
-                        <ul>
-                            <li>Play song audio</li>
-                            <li>Song and image upload</li>
-                            <li>Full responsiveness for all devices</li>
-                            <li>Social authentication integration</li>
-                            <li>Favorites system</li>
-                            <li>Playlists / Liked songs system</li>
-                        </ul>
+                <div class="experiences">
+                    <h3>Experiences</h3>
+                    <div class="timestamp">
+                        <div>T4 TEK COMPANY LIMITED</div>
+                        <div class="time">4/2023 - Present</div>
                     </div>
-                    <div>
-                        <p>Technical description:</p>
-                        <ul>
-                            <li>Framework: Nextjs</li>
-                            <li>Javascript library: Reactjs</li>
-                            <li>Style library: Tailwind</li>
-                            <li>Database: Supabase(PostgreSQL)</li>
-                            <li>Deploy platform: Vercel</li>
-                        </ul>
+                    <p>Au Duong Lan Ward 2 District 8 HCM Viet Nam</p>
+                    <ul>
+                        <li>
+                            Participate in developing enterprise management
+                            software products (ERP)
+                        </li>
+                        <li>System config and deployment</li>
+                        <li>Research and writing document</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <p>PROGRAMMING LANGUAGES</p>
+                    <ul>
+                        <li>Experienced with: C, C++</li>
+                        <li>Familiar with: Javascript( Typescript ), Python</li>
+                    </ul>
+                    <p>WEB FRAMEWORKS</p>
+                    <ul>
+                        <li>Python: Flask</li>
+                        <li>Node.js: Express, Next, React</li>
+                    </ul>
+                    <p>STYLING LIBRARY</p>
+                    <ul>
+                        <li>Tailwind</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <p>TOOLKITS</p>
+                    <ul>
+                        <li>Container: Docker</li>
+                        <li>Database: SQLite, PostgreSQL, Mongodb</li>
+                        <li>Operating system: Linux (Ubuntu distro)</li>
+                    </ul>
+                    <p>SOFT SKILLS</p>
+                    <ul>
+                        <li>Team work</li>
+                        <li>
+                            English: Proficient in reading and comprehending
+                            English documents
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane tb-certifications">
+                <div>
+                    <h1>CERTIFICATIONS</h1>
+                    <div class="timestamp">
+                        <h3>CS50: Introduction to Computer Science</h3>
+                        <div class="time">12/2022 - 4/2023</div>
+                    </div>
+                    <p>
+                        This is CS50x , Harvard University's online course
+                        introduction to the intellectual enterprises of computer
+                        science and the art of programming for majors and
+                        non-majors alike, with or without prior programming
+                        experience. An entry-level course taught by David J.
+                        Malan, CS50x teaches students how to think
+                        algorithmically and solve problems efficiently. Topics
+                        include abstraction, algorithms, data structures,
+                        encapsulation, resource management, security, software
+                        engineering, and web development. Languages include C,
+                        Python, SQL, and JavaScript plus CSS and HTML. Problem
+                        sets inspired by real-world domains of biology,
+                        cryptography, finance, forensics, and gaming. The
+                        on-campus version of CS50x , CS50, is Harvard's largest
+                        course.
+                    </p>
+                    <div class="degree-img">
+                        <img
+                            alt="CS50X Certificate"
+                            src="./static/img/CS50x.png"
+                        />
+                    </div>
+                    <div class="degree-btn">
+                        <button type="button"><span>View</span></button>
                     </div>
                 </div>
-                <div class="link-icon">
-                    <a target="_blank" href="https://github.com/Chumr26/spotify_clone">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://spotify-clone-of-khoaden.vercel.app/">
-                        <i class="fa-solid fa-earth-americas"></i>
-                    </a>
-                </div>
-                <div class="project-images">
-                    <img src="./static/img/login_page.png" alt="Login page" />
-                    <img src="./static/img/home_page.png" alt="Home page" />
-                </div>
-            </div>
-            <div>
-                <div class="timestamp">
-                    <h3>YOUTUBE to MP3 CONVERTER</h3>
-                    <div class="time">9/2023 - 10/2023</div>
-                </div>
-                <p>
-                    This is web tool converter in order to to let user convert youtube link into
-                    downloadable mp3 file.
-                </p>
-                <div class="link-icon">
-                    <a target="_blank" href="https://github.com/Chumr26/y2m">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://youtubetomp3-chumr26.onrender.com/">
-                        <i class="fa-solid fa-earth-americas"></i>
-                    </a>
-                </div>
-                <div class="project-images">
-                    <img id="y2m" src="./static/img/y2m.png" alt="Y2M Tool" />
+                <div>
+                    <div class="timestamp">
+                        <h3>CS50's Introduction to Programming with Python</h3>
+                        <div class="time">3/2023 - 4/2023</div>
+                    </div>
+                    <p>
+                        An introduction to programming language Python. Learn
+                        how to handle exceptions, find and fix bugs, and write
+                        unit tests; use third-party libraries; validate and
+                        extract data with regular expressions; model real-world
+                        entities with classes, objects, methods, and properties;
+                        and read and write files. Hands-on opportunities for
+                        lots of practice. Exercises inspired by real-world
+                        programming problems.
+                    </p>
+                    <div class="degree-img">
+                        <img
+                            alt="CS50P Certificate"
+                            src="./static/img/CS50P.png"
+                        />
+                    </div>
+                    <div class="degree-btn">
+                        <button type="button"><span>View</span></button>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="timestamp">
-                    <h3>MUSIC PLAYER</h3>
-                    <div class="time">8/2023 - 9/2023</div>
+            <div class="tab-pane">
+                <h1>PROJECTS</h1>
+                <div>
+                    <div class="timestamp">
+                        <h3>SPOTIFY CLONE</h3>
+                        <div class="time">10/2023 - 11/2023</div>
+                    </div>
+                    <p>A Full Stack Spotify Clone</p>
+                    <div class="description">
+                        <div>
+                            <p>Key Features:</p>
+                            <ul>
+                                <li>Play song audio</li>
+                                <li>Song and image upload</li>
+                                <li>Full responsiveness for all devices</li>
+                                <li>Social authentication integration</li>
+                                <li>Favorites system</li>
+                                <li>Playlists / Liked songs system</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Technical description:</p>
+                            <ul>
+                                <li>Framework: Nextjs</li>
+                                <li>Javascript library: Reactjs</li>
+                                <li>Style library: Tailwind</li>
+                                <li>Database: Supabase(PostgreSQL)</li>
+                                <li>Deploy platform: Vercel</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="link-icon">
+                        <a
+                            target="_blank"
+                            href="https://github.com/Chumr26/spotify_clone"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://spotify-clone-of-khoaden.vercel.app/"
+                        >
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                    </div>
+                    <div class="project-images">
+                        <img
+                            src="./static/img/login_page.png"
+                            alt="Login page"
+                        />
+                        <img src="./static/img/home_page.png" alt="Home page" />
+                    </div>
                 </div>
-                <p>
-                    This project represents my passion for music and
-                    technology, bringing together the joy of music and the
-                    power of software. It is build from pure HTML, CSS and
-                    JS. Below, there is a link to that page, you are welcome
-                    to visit.
-                </p>
-                <div class="link-icon">
-                    <a target="_blank" href="https://github.com/Chumr26/music_player">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://chumr26.github.io/music_player">
-                        <i class="fa-solid fa-earth-americas"></i>
-                    </a>
+                <div>
+                    <div class="timestamp">
+                        <h3>YOUTUBE to MP3 CONVERTER</h3>
+                        <div class="time">9/2023 - 10/2023</div>
+                    </div>
+                    <p>
+                        This is web tool converter in order to to let user
+                        convert youtube link into downloadable mp3 file.
+                    </p>
+                    <div class="link-icon">
+                        <a
+                            target="_blank"
+                            href="https://github.com/Chumr26/y2m"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://youtubetomp3-chumr26.onrender.com/"
+                        >
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                    </div>
+                    <div class="project-images">
+                        <img
+                            id="y2m"
+                            src="./static/img/y2m.png"
+                            alt="Y2M Tool"
+                        />
+                    </div>
                 </div>
-                <div class="project-images">
-                    <img id="music-player" src="./static/img/music_player.png" alt="Music Player" />
+                <div>
+                    <div class="timestamp">
+                        <h3>MUSIC PLAYER</h3>
+                        <div class="time">8/2023 - 9/2023</div>
+                    </div>
+                    <p>
+                        This project represents my passion for music and
+                        technology, bringing together the joy of music and the
+                        power of software. It is build from pure HTML, CSS and
+                        JS. Below, there is a link to that page, you are welcome
+                        to visit.
+                    </p>
+                    <div class="link-icon">
+                        <a
+                            target="_blank"
+                            href="https://github.com/Chumr26/music_player"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://chumr26.github.io/music_player"
+                        >
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                    </div>
+                    <div class="project-images">
+                        <img
+                            id="music-player"
+                            src="./static/img/music_player.png"
+                            alt="Music Player"
+                        />
+                    </div>
+                </div>
+                <div>
+                    <div class="timestamp">
+                        <h3>TODOS LIST</h3>
+                        <div class="time">8/2023 - 9/2023</div>
+                    </div>
+                    <p>
+                        This is a todo app build with pure html, css,
+                        javascript, there a links to live app and source code on
+                        github.
+                    </p>
+                    <div class="link-icon">
+                        <a
+                            target="_blank"
+                            href="https://github.com/Chumr26/todos_app"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://chumr26.github.io/todos_app"
+                        >
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </a>
+                    </div>
+                    <div class="project-images">
+                        <img
+                            id="todos"
+                            src="./static/img/todos.png"
+                            alt="Music Player"
+                        />
+                    </div>
+                </div>
+                <div>
+                    <div class="timestamp">
+                        <h3>SALE MODULE</h3>
+                        <div class="time">6/2023 - 8/2023</div>
+                    </div>
+                    <p>
+                        A web service using Odoo framework, applied into
+                        creating quotation, sale order, delivery order.
+                    </p>
+                    <div class="link-icon">
+                        <a
+                            target="_blank"
+                            href="https://github.com/Chumr26/newsale"
+                            ><i class="fa-brands fa-github"></i
+                        ></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="timestamp">
+                        <h3>TIMEKEEPING MODULE</h3>
+                        <div class="time">4/2023 - 6/2023</div>
+                    </div>
+                    <p>
+                        A web service using Odoo framework, applied into
+                        reporting of product quantities post-work and to
+                        automatically update warehouse inventory levels.
+                    </p>
+                    <div class="link-icon">
+                        <a
+                            target="_blank"
+                            href="https://github.com/Chumr26/timekeeping_app"
+                            ><i class="fa-brands fa-github"></i
+                        ></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="timestamp">
+                        <h3>TRANSACTION SIMULATION</h3>
+                        <div class="time">3/2023 - 4/2023</div>
+                    </div>
+                    <p>
+                        The application is built using Python and Flask
+                        framework, with SQLite as the database management
+                        system. The user interface is developed using HTML, CSS,
+                        and Bootstrap to provide a responsive and user-friendly
+                        experience.The application uses a real-time stock price
+                        API to provide the latest market data for the users.
+                    </p>
+                    <div class="link-icon">
+                        <a
+                            target="_blank"
+                            href="https://github.com/Chumr26/transaction"
+                            ><i class="fa-brands fa-github"></i
+                        ></a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="timestamp">
-                    <h3>TODOS LIST</h3>
-                    <div class="time">8/2023 - 9/2023</div>
-                </div>
-                <p>
-                    This is a todo app build with pure html, css, javascript,
-                    there a links to live app and source code on github.
-                </p>
-                <div class="link-icon">
-                    <a target="_blank" href="https://github.com/Chumr26/todos_app">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://chumr26.github.io/todos_app">
-                        <i class="fa-solid fa-earth-americas"></i>
-                    </a>
-                </div>
-                <div class="project-images">
-                    <img id="todos" src="./static/img/todos.png" alt="Music Player" />
-                </div>
-            </div>
-            <div>
-                <div class="timestamp">
-                    <h3>SALE MODULE</h3>
-                    <div class="time">6/2023 - 8/2023</div>
-                </div>
-                <p>
-                    A web service using Odoo framework, applied into
-                    creating quotation, sale order, delivery order.
-                </p>
-                <div class="link-icon">
-                    <a target="_blank" href="https://github.com/Chumr26/newsale"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div>
-                <div class="timestamp">
-                    <h3>TIMEKEEPING MODULE</h3>
-                    <div class="time">4/2023 - 6/2023</div>
-                </div>
-                <p>
-                    A web service using Odoo framework, applied into
-                    reporting of product quantities post-work and to
-                    automatically update warehouse inventory levels.
-                </p>
-                <div class="link-icon">
-                    <a target="_blank" href="https://github.com/Chumr26/timekeeping_app"><i
-                            class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div>
-                <div class="timestamp">
-                    <h3>TRANSACTION SIMULATION</h3>
-                    <div class="time">3/2023 - 4/2023</div>
-                </div>
-                <p>
-                    The application is built using Python and Flask
-                    framework, with SQLite as the database management
-                    system. The user interface is developed using HTML, CSS,
-                    and Bootstrap to provide a responsive and user-friendly
-                    experience.The application uses a real-time stock price
-                    API to provide the latest market data for the users.
-                </p>
-                <div class="link-icon">
-                    <a target="_blank" href="https://github.com/Chumr26/transaction"><i
-                            class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-
-
-
         </div>
-    </div>
-    <script src="./portfolio.js"></script>
-</body>
-
+        <script src="./portfolio.js"></script>
+    </body>
 </html>
