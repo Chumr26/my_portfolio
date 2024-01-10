@@ -427,6 +427,16 @@ img {
     width: 49%;
 }
 
+.blog-preview {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 70%;
+}
+
+.blog-preview>img {
+    border-radius: 10px;
+}
+
 #music-player {
     margin: 0 auto;
     width: 30%;
@@ -445,7 +455,7 @@ a {
     text-decoration: none;
 }
 
-.fa-earth-americas {
+.link-icon>a+a {
     margin-left: 20px;
 }
 
@@ -475,11 +485,16 @@ h1 span {
     .tabs {
         width: 100%;
         height: 100%;
+        padding-top: 30px;
         position: relative;
         border: none;
         box-shadow: none;
-        flex-direction: column-reverse;
         animation: slide-in-top 0.5s both;
+    }
+
+    .timestamp.python {
+        display: block;
+        height: auto;
     }
 
     .avatar {
@@ -515,12 +530,12 @@ h1 span {
     }
 
     .tabs {
+        padding-top: 30px;
         width: 100%;
         height: 100%;
         position: relative;
         border: none;
         box-shadow: none;
-        flex-direction: column-reverse;
         animation: slide-in-top 0.5s both;
     }
 
@@ -552,5 +567,41 @@ h1 span {
 
     .link-icon {
         margin-bottom: 20px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-images {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    
+    .project-images img {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .blog-preview {
+        margin-bottom: 20px;
+        width: auto;
+    }
+
+    .link-icon i {
+        margin-bottom: 10px;
+        font-size: 150%;
+    }
+
+    #y2m {
+        width: 100%;
+    }
+
+    #music-player {
+        width: 100%;
     }
 }
