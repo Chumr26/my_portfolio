@@ -538,6 +538,22 @@ h1 span {
     .link-icon {
         margin-bottom: 20px;
     }
+
+    .spotify-review {
+        flex-direction: column;
+        margin-bottom: 50px;
+        row-gap: 20px;
+    }
+
+    .spotify-desktop-view {
+        width: 100%;
+    }
+
+    .spotify-mobile-view {
+        margin: 0 auto;
+        height: 500px;
+        width: fit-content;
+    }
 }
 
 @media (max-width: 600px) {
