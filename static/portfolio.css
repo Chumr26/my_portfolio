@@ -427,6 +427,23 @@ img {
     width: 49%;
 }
 
+.spotify-review {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.spotify-desktop-view {
+    width: 60%;
+    border-radius: 5px;
+}
+
+.spotify-mobile-view {
+    height: 440px;
+    width: auto;
+    border-radius: 10px;
+}
+
 .blog-preview {
     margin: 0 auto;
     margin-bottom: 100px;
@@ -580,11 +597,27 @@ h1 span {
         justify-content: space-between;
         margin-bottom: 50px;
     }
-    
+
     .project-images img {
         border-radius: 20px;
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    .spotify-review {
+        flex-direction: column;
+        margin-bottom: 50px;
+        row-gap: 20px;
+    }
+
+    .spotify-desktop-view {
+        width: 100%;
+    }
+
+    .spotify-mobile-view {
+        margin: 0 auto;
+        height: 500px;
+        width: fit-content;
     }
 
     .blog-preview {
